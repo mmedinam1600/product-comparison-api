@@ -1,0 +1,8 @@
+FROM golang:1.25.1 AS build
+WORKDIR /src
+COPY . .
+RUN go build -o /out/product-comparison-api ./cmd/product-comparison-api
+
+FROM gcr.io/distroless/base-debian12
+COPY --from=build /out/product-comparison-api /usr/local/bin/product-comparison-api
+ENTRYPOINT ["/usr/local/bin/product-comparison-api"]

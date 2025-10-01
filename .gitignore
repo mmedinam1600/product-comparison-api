@@ -1,0 +1,21 @@
+.env
+.env.local
+.env.prod
+
+# IDEs and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Builds and binaries
+/bin/
+/dist/
+/out/
+/build/
+/debug
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
