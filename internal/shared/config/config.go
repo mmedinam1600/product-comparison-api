@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/caarlos0/env/v10"
 	"github.com/joho/godotenv"
@@ -13,6 +14,22 @@ type Config struct {
 	Port    string `env:"PORT" envDefault:"8080"`
 	GinMode string `env:"GIN_MODE" envDefault:"release"` // "debug" | "release" | "test"
 	AppEnv  string `env:"APP_ENV" envDefault:"local"`    // "local" | "prod"
+
+	// Data
+	DataFile string `env:"DATA_FILE" envDefault:"data/items.json"`
+
+	// Cache
+	CacheTTL  time.Duration `env:"CACHE_TTL" envDefault:"60s"`
+	CacheSize int64         `env:"CACHE_SIZE" envDefault:"1000"`
+
+	// Idempotency
+	IdempotencyTTL  time.Duration `env:"IDEMPOTENCY_TTL" envDefault:"5m"`
+	IdempotencySize int64         `env:"IDEMPOTENCY_SIZE" envDefault:"5000"`
+
+	// Server timeouts
+	ReadTimeout  time.Duration `env:"READ_TIMEOUT" envDefault:"10s"`
+	WriteTimeout time.Duration `env:"WRITE_TIMEOUT" envDefault:"10s"`
+	IdleTimeout  time.Duration `env:"IDLE_TIMEOUT" envDefault:"60s"`
 }
 
 func getenv(key, def string) string {

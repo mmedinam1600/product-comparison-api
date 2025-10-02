@@ -1,0 +1,608 @@
+[
+  {
+    "id": "d760a1da-604e-4721-a83c-28a9ba346770",
+    "name": "UltraView 34 LG",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-lg-34.png",
+    "description": "34\" monitor with 120Hz refresh rate and 1920x1080 resolution.",
+    "price": 351.85,
+    "rating": 4.6,
+    "specifications": {
+      "weight": {
+        "value": 4.091,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 34,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "1920x1080",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "4897b2e4-fb8f-4aa3-b35a-a90594eb0d4d",
+    "name": "Pro Mouse HP 2",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-hp-2.png",
+    "description": "High-precision gaming mouse with 2 buttons and up to 18000 DPI.",
+    "price": 34.24,
+    "rating": 4.0,
+    "specifications": {
+      "weight": {
+        "value": 0.082,
+        "unit": "kg"
+      },
+      "sensor_dpi": 18000,
+      "buttons": 2,
+      "wireless": true
+    }
+  },
+  {
+    "id": "30106bcd-f425-4dfb-8ef6-055ab4744f6c",
+    "name": "Pro Mouse Logitech 3",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-logitech-3.png",
+    "description": "High-precision gaming mouse with 6 buttons and up to 12000 DPI.",
+    "price": 23.26,
+    "rating": 4.8,
+    "specifications": {
+      "weight": {
+        "value": 0.094,
+        "unit": "kg"
+      },
+      "sensor_dpi": 12000,
+      "buttons": 6,
+      "wireless": false
+    }
+  },
+  {
+    "id": "90d8335d-4d95-475d-bc0e-1bfe63decdd0",
+    "name": "Pro Mouse Razer 4",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-razer-4.png",
+    "description": "High-precision gaming mouse with 12 buttons and up to 20000 DPI.",
+    "price": 40.57,
+    "rating": 4.0,
+    "specifications": {
+      "weight": {
+        "value": 0.113,
+        "unit": "kg"
+      },
+      "sensor_dpi": 20000,
+      "buttons": 12,
+      "wireless": false
+    }
+  },
+  {
+    "id": "006a918d-384a-4005-ab58-2b3c68fcbd09",
+    "name": "Mech Keyboard Keychron 1",
+    "image_url": "https://cdn.ecommerce-shop.com/images/keyboard-keychron-1.png",
+    "description": "Mechanical keyboard, clicky switches, ANSI layout, wired.",
+    "price": 140.07,
+    "rating": 4.6,
+    "specifications": {
+      "weight": {
+        "value": 0.716,
+        "unit": "kg"
+      },
+      "switch_type": "clicky",
+      "layout": "ANSI",
+      "backlit": false,
+      "wireless": false
+    }
+  },
+  {
+    "id": "8288c3f7-e55d-40bc-a7f5-0330e3517127",
+    "name": "Wireless Headphones Anker 6",
+    "image_url": "https://cdn.ecommerce-shop.com/images/headphones-anker-6.png",
+    "description": "Over-ear headphones with up to 20h battery life and ANC.",
+    "price": 349.25,
+    "rating": 4.1,
+    "specifications": {
+      "weight": {
+        "value": 0.232,
+        "unit": "kg"
+      },
+      "battery_life": {
+        "value": 20,
+        "unit": "h"
+      },
+      "noise_cancelling": true,
+      "wireless": true
+    }
+  },
+  {
+    "id": "4ac438ff-4388-479e-b546-2bfbdf2de9a4",
+    "name": "UltraView 34 AOC",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-aoc-34.png",
+    "description": "34\" monitor with 144Hz refresh rate and 2560x1440 resolution.",
+    "price": 233.63,
+    "rating": 3.8,
+    "specifications": {
+      "weight": {
+        "value": 7.157,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 34,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 144,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "2560x1440",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "012326b6-49ff-4407-9433-e7a752096186",
+    "name": "Wireless Headphones Sennheiser 3",
+    "image_url": "https://cdn.ecommerce-shop.com/images/headphones-sennheiser-3.png",
+    "description": "Over-ear headphones with up to 30h battery life and passive isolation.",
+    "price": 69.7,
+    "rating": 4.4,
+    "specifications": {
+      "weight": {
+        "value": 0.229,
+        "unit": "kg"
+      },
+      "battery_life": {
+        "value": 30,
+        "unit": "h"
+      },
+      "noise_cancelling": false,
+      "wireless": true
+    }
+  },
+  {
+    "id": "fff26536-b70f-4598-bb41-f07b25de803a",
+    "name": "UltraView 34 ASUS",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-asus-34.png",
+    "description": "34\" monitor with 240Hz refresh rate and 3440x1440 resolution.",
+    "price": 311.01,
+    "rating": 4.3,
+    "specifications": {
+      "weight": {
+        "value": 7.996,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 34,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 240,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "3440x1440",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "d344b957-b09a-42df-bf3e-85cf815a269d",
+    "name": "UltraView 34 Dell",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-dell-34.png",
+    "description": "34\" monitor with 240Hz refresh rate and 3840x2160 resolution.",
+    "price": 463.99,
+    "rating": 3.9,
+    "specifications": {
+      "weight": {
+        "value": 4.872,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 34,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 240,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "3840x2160",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "5d46a419-6ece-46d4-844e-1f3d7bc32a73",
+    "name": "Pro Mouse SteelSeries 6",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-steelseries-6.png",
+    "description": "High-precision gaming mouse with 8 buttons and up to 18000 DPI.",
+    "price": 34.43,
+    "rating": 4.0,
+    "specifications": {
+      "weight": {
+        "value": 0.137,
+        "unit": "kg"
+      },
+      "sensor_dpi": 18000,
+      "buttons": 8,
+      "wireless": true
+    }
+  },
+  {
+    "id": "1cb7d427-5775-4859-99f3-dee1b08003bb",
+    "name": "Wireless Headphones Apple 5",
+    "image_url": "https://cdn.ecommerce-shop.com/images/headphones-apple-5.png",
+    "description": "Over-ear headphones with up to 35h battery life and ANC.",
+    "price": 76.54,
+    "rating": 4.6,
+    "specifications": {
+      "weight": {
+        "value": 0.292,
+        "unit": "kg"
+      },
+      "battery_life": {
+        "value": 35,
+        "unit": "h"
+      },
+      "noise_cancelling": true,
+      "wireless": false
+    }
+  },
+  {
+    "id": "dd5fe08a-5ae3-468e-80aa-e3524212e966",
+    "name": "UltraView 27 BenQ",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-benq-27.png",
+    "description": "27\" monitor with 75Hz refresh rate and 1920x1080 resolution.",
+    "price": 395.92,
+    "rating": 4.5,
+    "specifications": {
+      "weight": {
+        "value": 5.853,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 27,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 75,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "1920x1080",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "52f84308-ff31-4b09-babd-c9f4cbebdafd",
+    "name": "Wireless Headphones JBL 4",
+    "image_url": "https://cdn.ecommerce-shop.com/images/headphones-jbl-4.png",
+    "description": "Over-ear headphones with up to 24h battery life and passive isolation.",
+    "price": 320.56,
+    "rating": 4.4,
+    "specifications": {
+      "weight": {
+        "value": 0.262,
+        "unit": "kg"
+      },
+      "battery_life": {
+        "value": 24,
+        "unit": "h"
+      },
+      "noise_cancelling": false,
+      "wireless": true
+    }
+  },
+  {
+    "id": "4cb1880b-ca72-46bf-83ef-5167e6d1ed03",
+    "name": "Mech Keyboard Varmilo 6",
+    "image_url": "https://cdn.ecommerce-shop.com/images/keyboard-varmilo-6.png",
+    "description": "Mechanical keyboard, linear switches, ANSI layout, wired.",
+    "price": 126.49,
+    "rating": 3.6,
+    "specifications": {
+      "weight": {
+        "value": 0.903,
+        "unit": "kg"
+      },
+      "switch_type": "linear",
+      "layout": "ANSI",
+      "backlit": true,
+      "wireless": false
+    }
+  },
+  {
+    "id": "3fea096f-20da-483a-823a-1033885cc7cf",
+    "name": "Mech Keyboard Logitech 5",
+    "image_url": "https://cdn.ecommerce-shop.com/images/keyboard-logitech-5.png",
+    "description": "Mechanical keyboard, tactile switches, ISO layout, wired.",
+    "price": 184.04,
+    "rating": 4.1,
+    "specifications": {
+      "weight": {
+        "value": 0.779,
+        "unit": "kg"
+      },
+      "switch_type": "tactile",
+      "layout": "ISO",
+      "backlit": true,
+      "wireless": false
+    }
+  },
+  {
+    "id": "f562f722-3e87-404c-a27f-773dc9b19d95",
+    "name": "Pro Mouse Zowie 10",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-zowie-10.png",
+    "description": "High-precision gaming mouse with 2 buttons and up to 16000 DPI.",
+    "price": 30.11,
+    "rating": 4.5,
+    "specifications": {
+      "weight": {
+        "value": 0.103,
+        "unit": "kg"
+      },
+      "sensor_dpi": 16000,
+      "buttons": 2,
+      "wireless": true
+    }
+  },
+  {
+    "id": "c17895dd-dffd-4ae7-89d0-89ef613bb219",
+    "name": "Pro Mouse ROG 1",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-rog-1.png",
+    "description": "High-precision gaming mouse with 4 buttons and up to 26000 DPI.",
+    "price": 62.58,
+    "rating": 4.7,
+    "specifications": {
+      "weight": {
+        "value": 0.086,
+        "unit": "kg"
+      },
+      "sensor_dpi": 26000,
+      "buttons": 4,
+      "wireless": true
+    }
+  },
+  {
+    "id": "8238e0e2-e7dd-42dd-9154-5da7d7071b09",
+    "name": "Pro Mouse Glorious 9",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-glorious-9.png",
+    "description": "High-precision gaming mouse with 10 buttons and up to 18000 DPI.",
+    "price": 33.91,
+    "rating": 4.1,
+    "specifications": {
+      "weight": {
+        "value": 0.107,
+        "unit": "kg"
+      },
+      "sensor_dpi": 18000,
+      "buttons": 10,
+      "wireless": false
+    }
+  },
+  {
+    "id": "0d8310c0-b2f0-4bd2-80dc-0943ae40f3ee",
+    "name": "UltraView 24 Samsung",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-samsung-24.png",
+    "description": "24\" monitor with 75Hz refresh rate and 2560x1440 resolution.",
+    "price": 293.72,
+    "rating": 4.6,
+    "specifications": {
+      "weight": {
+        "value": 4.126,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 24,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 75,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "2560x1440",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "7504f71f-5dbf-4297-b46f-5e667ea98be1",
+    "name": "Pro Mouse HyperX 7",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-hyperx-7.png",
+    "description": "High-precision gaming mouse with 6 buttons and up to 18000 DPI.",
+    "price": 99.49,
+    "rating": 4.6,
+    "specifications": {
+      "weight": {
+        "value": 0.134,
+        "unit": "kg"
+      },
+      "sensor_dpi": 18000,
+      "buttons": 6,
+      "wireless": true
+    }
+  },
+  {
+    "id": "306be8ca-3104-488d-83e4-fb5b57532a70",
+    "name": "Mech Keyboard Corsair 3",
+    "image_url": "https://cdn.ecommerce-shop.com/images/keyboard-corsair-3.png",
+    "description": "Mechanical keyboard, clicky switches, ANSI layout, wired.",
+    "price": 129.27,
+    "rating": 4.0,
+    "specifications": {
+      "weight": {
+        "value": 0.925,
+        "unit": "kg"
+      },
+      "switch_type": "clicky",
+      "layout": "ANSI",
+      "backlit": false,
+      "wireless": false
+    }
+  },
+  {
+    "id": "c60b85b7-a3bc-4507-8376-2a3e99ff05b5",
+    "name": "Wireless Headphones Bose 2",
+    "image_url": "https://cdn.ecommerce-shop.com/images/headphones-bose-2.png",
+    "description": "Over-ear headphones with up to 40h battery life and ANC.",
+    "price": 187.5,
+    "rating": 3.9,
+    "specifications": {
+      "weight": {
+        "value": 0.321,
+        "unit": "kg"
+      },
+      "battery_life": {
+        "value": 40,
+        "unit": "h"
+      },
+      "noise_cancelling": true,
+      "wireless": true
+    }
+  },
+  {
+    "id": "ef673d21-ebda-44f8-a405-c0980b5a43d3",
+    "name": "Mech Keyboard Razer 4",
+    "image_url": "https://cdn.ecommerce-shop.com/images/keyboard-razer-4.png",
+    "description": "Mechanical keyboard, linear switches, ANSI layout, wired.",
+    "price": 75.5,
+    "rating": 4.8,
+    "specifications": {
+      "weight": {
+        "value": 0.841,
+        "unit": "kg"
+      },
+      "switch_type": "linear",
+      "layout": "ANSI",
+      "backlit": true,
+      "wireless": false
+    }
+  },
+  {
+    "id": "5cded110-7c37-49e3-bc51-348a10f108a3",
+    "name": "Wireless Headphones Sony 1",
+    "image_url": "https://cdn.ecommerce-shop.com/images/headphones-sony-1.png",
+    "description": "Over-ear headphones with up to 50h battery life and passive isolation.",
+    "price": 287.02,
+    "rating": 4.0,
+    "specifications": {
+      "weight": {
+        "value": 0.27,
+        "unit": "kg"
+      },
+      "battery_life": {
+        "value": 50,
+        "unit": "h"
+      },
+      "noise_cancelling": false,
+      "wireless": true
+    }
+  },
+  {
+    "id": "b92a75db-db88-4ea5-b9a3-91a7c65b2fa7",
+    "name": "Pro Mouse Xtrfy 8",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-xtrfy-8.png",
+    "description": "High-precision gaming mouse with 2 buttons and up to 12000 DPI.",
+    "price": 35.96,
+    "rating": 4.4,
+    "specifications": {
+      "weight": {
+        "value": 0.135,
+        "unit": "kg"
+      },
+      "sensor_dpi": 12000,
+      "buttons": 2,
+      "wireless": true
+    }
+  },
+  {
+    "id": "ec7adc4b-8895-4986-aea2-8ae0d2b3bfad",
+    "name": "Pro Mouse Corsair 5",
+    "image_url": "https://cdn.ecommerce-shop.com/images/mouse-corsair-5.png",
+    "description": "High-precision gaming mouse with 2 buttons and up to 16000 DPI.",
+    "price": 25.17,
+    "rating": 4.4,
+    "specifications": {
+      "weight": {
+        "value": 0.127,
+        "unit": "kg"
+      },
+      "sensor_dpi": 16000,
+      "buttons": 2,
+      "wireless": true
+    }
+  },
+  {
+    "id": "725451db-e562-4c93-a2b6-21056cf58eb5",
+    "name": "UltraView 32 MSI",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-msi-32.png",
+    "description": "32\" monitor with 120Hz refresh rate and 3840x2160 resolution.",
+    "price": 530.27,
+    "rating": 4.5,
+    "specifications": {
+      "weight": {
+        "value": 3.037,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 32,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "3840x2160",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "fca65927-bf1c-43e8-834d-46a26f48a015",
+    "name": "UltraView 29 Acer",
+    "image_url": "https://cdn.ecommerce-shop.com/images/monitor-acer-29.png",
+    "description": "29\" monitor with 120Hz refresh rate and 2560x1440 resolution.",
+    "price": 409.83,
+    "rating": 3.9,
+    "specifications": {
+      "weight": {
+        "value": 4.485,
+        "unit": "kg"
+      },
+      "screen_size": {
+        "value": 29,
+        "unit": "in"
+      },
+      "refresh_rate": {
+        "value": 120,
+        "unit": "Hz"
+      },
+      "resolution": {
+        "value": "2560x1440",
+        "unit": "pixels"
+      }
+    }
+  },
+  {
+    "id": "1f1e8f7c-359c-4903-8318-b21c7e1b9217",
+    "name": "Mech Keyboard Ducky 2",
+    "image_url": "https://cdn.ecommerce-shop.com/images/keyboard-ducky-2.png",
+    "description": "Mechanical keyboard, linear switches, ISO layout, wired.",
+    "price": 199.11,
+    "rating": 4.0,
+    "specifications": {
+      "weight": {
+        "value": 0.738,
+        "unit": "kg"
+      },
+      "switch_type": "linear",
+      "layout": "ISO",
+      "backlit": false,
+      "wireless": false
+    }
+  }
+]
