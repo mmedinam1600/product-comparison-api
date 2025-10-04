@@ -36,32 +36,43 @@ Esta API permite comparar múltiples productos de un catálogo de e-commerce (si
 
 ### Core
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| **Go** | 1.25.1 | Lenguaje principal |
-| **Gin** | 1.11.0 | Web framework |
-| **Zap** | 1.27.0 | Logging |
-| **Ristretto** | 2.3.0 | Cache (in-memory) |
+| Tecnología | Propósito |
+|------------|-----------|
+| **Go** | Lenguaje principal |
+| **Gin** | Web framework |
+| **Zap** | Logging estructurado |
+| **Ristretto** | Cache in-memory de alta performance |
 
 ### Observabilidad
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| **Prometheus** | 2.48.0 | Recolección de métricas |
-| **Grafana** | 10.2.2 | Visualización y dashboards |
-| **Loki** | 2.9.3 | Agregación de logs |
-| **Promtail** | 2.9.3 | Recolector de logs |
-| **cAdvisor** | 0.47.2 | Métricas de contenedores |
+| Tecnología | Propósito |
+|------------|-----------|
+| **Prometheus** | Recolección de métricas |
+| **Grafana** | Visualización y dashboards |
+| **Loki** | Agregación de logs |
+| **Promtail** | Recolector de logs |
+| **cAdvisor** | Métricas de contenedores |
 
-### Data & Config
+### Libs
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| **goccy/go-json** | 0.10.5 | Parser JSON de alta velocidad |
-| **validator** | 10.27.0 | Validación de requests |
-| **godotenv** | 1.5.1 | Manejo de variables de entorno |
+| Tecnología | Propósito |
+|------------|-----------|
+| **goccy/go-json** | Parser JSON de alta velocidad |
+| **validator** | Validación de requests |
+| **godotenv** | Manejo de variables de entorno |
 
 ---
+
+## Gen AI en el desarrollo moderno
+
+Yo veo la Inteligencia Artificial Generativa (Gen AI) como una herramienta que realmente nos ayuda en el desarrollo moderno, siempre y cuando sepamos usarla bien y darle las instrucciones correctas. Para mí, no se trata de reemplazar al desarrollador, sino de aprovecharla como un apoyo que nos permite optimizar tiempo y enfocarnos en lo que realmente importa: la arquitectura, los patrones de diseño y las buenas prácticas.
+
+En mi experiencia, la Gen AI facilita mucho el trabajo en tareas simples o repetitivas, como generar código base, escribir documentación o crear casos de prueba iniciales. Además, también sirve para inspirarse con ejemplos de arquitecturas o validaciones que ya son estándar en la industria, lo cual acelera el proceso de desarrollo.
+
+Creo que el valor está en que, si uno ya tiene claro lo que quiere lograr y entiende las bases del desarrollo, la Gen AI se convierte en un aliado muy potente. Nos ayuda a crear más rápido, a experimentar con ideas y a mantener un flujo de trabajo más ágil, sin sacrificar calidad.
+
+---
+
 
 ## Estructura de Archivos
 
