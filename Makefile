@@ -11,7 +11,13 @@ run: ## Run local
 	go run ./cmd/product-comparison-api
 
 test: ## Run tests
-	go test -v ./...
+	@echo "Ejecutando tests..."
+	@go test ./internal/domain/... -v
+	@go test ./internal/service/strategy/... -v
+	@go test ./internal/service/... -v
+
+test-coverage: ## Run tests with coverage
+	@go test -cover ./...
 
 docker-build: ## Build Docker image
 	docker compose build
