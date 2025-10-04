@@ -1,0 +1,50 @@
+FROM golang:1.25.1-alpine AS build
+
+# Install system dependencies
+RUN apk add --no-cache git ca-certificates tzdata
+
+WORKDIR /build
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+
+# Build application
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build \
+    -ldflags="-w -s" \
+    -o /out/product-comparison-api \
+    ./cmd/product-comparison-api
+
+# Runtime stage
+FROM alpine:3.19
+
+# Install ca-certificates for HTTPS
+RUN apk --no-cache add ca-certificates tzdata
+
+# Create non-root user
+RUN addgroup -g 1001 -S appuser && \
+    adduser -u 1001 -S appuser -G appuser
+
+WORKDIR /app
+
+COPY --from=build /out/product-comparison-api /app/product-comparison-api
+
+COPY --from=build /build/data /app/data
+
+RUN chown -R appuser:appuser /app
+
+USER appuser
+
+EXPOSE 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD wget --no-verbose --tries=1 --spider http://localhost:8080/api/health-check || exit 1
+
+# Default environment variables
+ENV PORT=8080 \
+    GIN_MODE=release \
+    DATA_FILE=/app/data/items.json
+
+ENTRYPOINT ["/app/product-comparison-api"]

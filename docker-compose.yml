@@ -1,0 +1,135 @@
+version: '3.9'
+
+services:
+  # Aplicación Go
+  product-comparison-api:
+    build:
+      context: .
+      dockerfile: deployment/dockerfile
+    container_name: product-comparison-api
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - GIN_MODE=release
+      - DATA_FILE=/app/data/items.json
+      - CACHE_TTL=60s
+      - CACHE_SIZE=1000
+      - IDEMPOTENCY_TTL=5m
+    networks:
+      - monitoring
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/api/health-check"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+        tag: "{{.Name}}"
+
+  # Prometheus - Métricas
+  prometheus:
+    image: prom/prometheus:v2.48.0
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./deployment/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./deployment/prometheus/alerts.yml:/etc/prometheus/alerts.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=7d'
+      - '--web.enable-lifecycle'
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  # Loki - Logs
+  loki:
+    image: grafana/loki:2.9.3
+    container_name: loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./deployment/loki/loki-config.yml:/etc/loki/local-config.yaml
+      - loki-data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  # Promtail - Recolector de logs para Loki
+  promtail:
+    image: grafana/promtail:2.9.3
+    container_name: promtail
+    volumes:
+      - ./deployment/promtail/promtail-config.yml:/etc/promtail/config.yml
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: -config.file=/etc/promtail/config.yml
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  # cAdvisor - Métricas de contenedores
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.47.2
+    container_name: cadvisor
+    ports:
+      - "8081:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      - /dev/disk:/dev/disk:ro
+    privileged: true
+    devices:
+      - /dev/kmsg
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  # Grafana - Visualización
+  grafana:
+    image: grafana/grafana:10.2.2
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=root
+      - GF_SECURITY_ADMIN_PASSWORD=toor
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_SERVER_ROOT_URL=http://localhost:3000
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./deployment/grafana/provisioning:/etc/grafana/provisioning
+      - ./deployment/grafana/dashboards:/var/lib/grafana/dashboards
+    networks:
+      - monitoring
+    restart: unless-stopped
+    depends_on:
+      - prometheus
+      - loki
+
+networks:
+  monitoring:
+    driver: bridge
+
+volumes:
+  prometheus-data:
+    driver: local
+  loki-data:
+    driver: local
+  grafana-data:
+    driver: local
+

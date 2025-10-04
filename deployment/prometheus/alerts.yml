@@ -1,0 +1,44 @@
+groups:
+  - name: container_health
+    interval: 30s
+    rules:
+      # Alerta si el contenedor está unhealthy
+      - alert: ContainerUnhealthy
+        expr: container_health_status{name="product-comparison-api"} != 1
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Container {{ $labels.name }} is unhealthy"
+          description: "Container {{ $labels.name }} has been unhealthy for more than 1 minute."
+
+      # Alerta si el contenedor usa mucha CPU
+      - alert: HighCPUUsage
+        expr: rate(container_cpu_usage_seconds_total{name="product-comparison-api"}[5m]) > 0.8
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage on {{ $labels.name }}"
+          description: "CPU usage is above 80% for 2 minutes."
+
+      # Alerta si el contenedor usa mucha memoria
+      - alert: HighMemoryUsage
+        expr: container_memory_usage_bytes{name="product-comparison-api"} > 500000000
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage on {{ $labels.name }}"
+          description: "Memory usage is above 500MB for 2 minutes."
+
+      # Alerta si el contenedor se reinicia frecuentemente
+      - alert: ContainerRestarts
+        expr: rate(container_start_time_seconds{name="product-comparison-api"}[10m]) > 0.05
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container {{ $labels.name }} is restarting frequently"
+          description: "Container has restarted more than 3 times in the last 10 minutes."
+

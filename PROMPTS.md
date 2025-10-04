@@ -486,6 +486,15 @@ Antes de implementar el nuevo endpoint si tienes alguna duda hazmelo saber
 
 
 
+## Prompt #3
+
+
+Dockerizacion y observabilidad
+
+```
+Dockeriza mi aplicacion de GO configura el archivo @dockerfile para el build de mi aplicacion (Configura un healthcheck que se ejecute a mi ruta de /healthcheck para saber el estado de mi app). De igual crea un archivo @docker-compose.yml y agrega mi aplicacion, asi como grafana con Loki y Prometheus para monitorizar el uso de CPU y memoria ram de nuestro contenedor en donde se encuentra nuestra aplicacion. Ademas con loki deberas mostrar los logs en grafana de la aplicacion de go. Genera un ashboard para almacenar esas metricas y poder visualizarlas
+```
+
 
 
 
